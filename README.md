@@ -1,4 +1,3 @@
-
 # react-native-sns
 
 ## Getting started
@@ -42,4 +41,4 @@ import RNSns from 'react-native-sns';
 // TODO: What to do with the module?
 RNSns;
 ```
-  
+# reactive-native-sns
