@@ -2,11 +2,11 @@
 
 ## Getting started
 
-`$ npm install react-native-sns --save`
+`$ npm install xxx --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-sns`
+`$ react-native link xxx`
 
 ## Usage
 ```javascript
