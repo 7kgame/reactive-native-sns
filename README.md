@@ -46,9 +46,21 @@ LoginApi.qqLogin()
 ```javascript
 LoginApi.wxLogin()
   .then(result => {
+    /**
+    * result= {
+    *   code: 200,
+    *   wx_code: xxx
+    * }
+    */
     console.log('login weixin result=', result);
   })
   .catch(err => {
+    /**
+    * err = {
+    *   code: 101,
+    *   msg: "get weixin code failed"
+    * }
+    */
     console.log('login weixin err', err);
   });
 ```
