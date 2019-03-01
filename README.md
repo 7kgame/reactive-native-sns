@@ -16,6 +16,11 @@ import * as LoginApi from 'react-native-sns';
 ```javascript
 LoginApi.qqLogin()
   .then(result => {
+    /**
+    * result = {
+        code: 200
+    * }
+    */
     console.log('login qq result ', result.code);
   })
   .catch(err => {
