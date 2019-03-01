@@ -18,15 +18,27 @@ LoginApi.qqLogin()
   .then(result => {
     /**
     * result = {
-        code: 200
+    *   code: 200,
+    *   openid: xxx,
+    *   access_token: xxx,
+    *   expires_in: xxx
     * }
     */
     console.log('login qq result ', result.code);
   })
   .catch(err => {
+    /**
+    * err = {
+    *   code: 101(qq登录异常) or 102(取消qq登录)
+    *   msg: xxx
+    * }
+    */
     console.log('login qq err', err);
   })
   .catch(err => {
+    /**
+    * err: qq start fail
+    */
     console.log('login qq fail', err);
   });
 ```
