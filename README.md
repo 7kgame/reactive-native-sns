@@ -8,18 +8,30 @@
 
 `$ react-native link react-native-sns`
 
-### Manual installation
-
-
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-sns` and add `RNSns.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNSns.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
-
 ## Usage
 ```javascript
 import * as LoginApi from 'react-native-sns';
 ```
-# reactive-native-sns
+## QQ
+```javascript
+LoginApi.qqLogin()
+  .then(result => {
+    console.log('login qq result ', result.code);
+  })
+  .catch(err => {
+    console.log('login qq err', err);
+  })
+  .catch(err => {
+    console.log('login qq fail', err);
+  });
+```
+## WeiXin
+```javascript
+LoginApi.wxLogin()
+  .then(result => {
+    console.log('login weixin result=', result);
+  })
+  .catch(err => {
+    console.log('login weixin err', err);
+  });
+```
